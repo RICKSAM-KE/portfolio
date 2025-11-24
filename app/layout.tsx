@@ -3,7 +3,19 @@ import "@/app/home/home.css";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
+import { Metadata } from "next";
+
+
+
+
+const metadata: Metadata = {
+  title: 'samuel.dev',
+  description: 'The official samuel.dev portfolio website.',
+  metadataBase: new URL('https://samuel.dev'),
+};
+
+
+
 
 export default function RootLayout({
   children,
@@ -13,7 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className="scroll-smooth">
       <head>
-        <title>My Portfolio</title>
+
+
+
         <meta name="description" content="Welcome to my portfolio website." />
       </head>
       <body className="home antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
