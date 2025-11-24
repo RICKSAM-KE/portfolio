@@ -7,12 +7,12 @@ import { Metadata } from "next";
 
 
 
-
 const metadata: Metadata = {
   title: 'samuel.dev',
-  description: 'The official samuel.dev portfolio website.',
+  description: 'Portfolio of Samuel Kavulavu, a web developer specializing in front-end development.',
   metadataBase: new URL('https://samuel.dev'),
 };
+
 
 
 
@@ -27,6 +27,7 @@ export default function RootLayout({
       <head>
 
 
+        <title>SAMUEL KAVULAVU- WEB DEVELOPER</title>
 
         <meta name="description" content="Welcome to my portfolio website." />
       </head>
